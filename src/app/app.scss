@@ -1,0 +1,385 @@
+@import "./src/app/fonts/fonts.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+  font-family:"SonsieOneRegular",  sans-serif;
+  font-size: 25px;
+}
+body {
+  height: 100%;
+}
+.wrapper {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;left: 0;
+  right: 0;
+  bottom: 0;
+  background:url("./Bears_Pandas_Snout_.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  min-height:100%;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  &__container {
+    max-width: 1030px;
+    padding: 0px 15px 0px 15px ;
+    color:rgb(255, 255, 255);
+  }
+}
+.label-main{
+  font-size: 2rem;
+  text-align: center;
+  &::first-letter{
+    color:rgb(221, 63, 15);
+    font-size: 3rem;
+  }
+
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  input[type="text"] {
+    font-family:"Roboto", serif;
+    margin: 0px 0.2rem 0px 0.2rem ;
+    width: 80vw;
+    height: 2rem;
+    padding: 0px 0.2rem 0px 0.2rem ;
+    font-size: 1.36rem;
+    border:none;
+    box-shadow: 0 0 15px rgb(0, 110, 255);
+    border-radius: 0.2rem;
+    color:black;
+  }
+  button[type="button"] {
+    cursor: pointer;
+    background: greenyellow;
+    border:dashed 0.08rem #fff;
+    outline: none;
+    border-radius: 50%;
+  }
+}
+.labels {
+  margin: 2rem 0px 0px 0px ;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+}
+.label__text {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: inline-block;
+  margin: 0px 1rem 0px 0px ;
+  text-align: center;
+  color:#fff;
+}
+.select{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 5px 15px 5px 10px ;
+  background-color: black;
+  color: white;
+  border:solid 1px orange;
+}
+.label__text--unique{
+  color:#ec5555;
+
+}
+#select1 {
+  margin-right: 10px;
+}
+.main {
+  font-family:"Roboto", serif;
+  margin: 0rem 0px 0px 0px ;
+  text-align: center;
+  background: white;
+  border-radius: 0.6rem;
+  width: 100%;
+  padding: 2rem 0;
+ &__title {
+   padding: 10px;
+   background-color: yellowgreen;
+    font-family: "SonsieOneRegular",serif;
+    color: #ffffff;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items:center;
+    padding: 0 10px;
+  }
+  &__container {
+    background-color: #fff;
+    border:solid 1px grey;
+    border-radius: 5px;
+    padding: 0.5rem;
+    max-width: 367px;
+    transition: border-color 0.3s linear 0s;
+    &:hover{
+      border-color: orange;
+    }
+  }
+   @media screen and (max-width:436px) {
+        width: 100vw;
+    @media screen and (max-width:352px){
+      .main__title {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+.card{
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  &__inner { 
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  }
+  .putdown{
+    flex:1 0 auto;
+
+  }
+  &__img{
+    height: 350px;
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+    min-width: 328px;
+    
+  }
+  
+  &__type-book {
+    min-height: 20px;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color:green;
+  }
+  h2 {
+    
+    margin: 0.5rem 0px 1rem 0px ;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  &__book-label{
+    flex: 1 0 auto;
+    height: 40px;
+    font-size: 0.7rem;
+    text-align: left;
+    width: 253px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__book-author{
+    margin: 15px 0px 0px 0px ;
+    text-align: right;
+    font-size: 0.6rem;
+    color: red;
+  }
+}
+.footer {
+  margin: 2rem 0px 2rem 0px ;
+}
+.loadMore {
+  font-size: 1rem;
+  background-color: skyblue;
+  padding: 7px 15px;
+  color:white;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: color 0.3s linear;
+  &:hover {
+    color:red;
+  }
+}
+.loadMore.hide {
+display: none;
+}
+.label {
+  display: flex;
+  align-items: center;
+}
+.notImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  p{
+    color: #ce4c1d;
+  }
+}
+
+.card__title-inner{
+  height: 40px;
+}
+.card__book-author-inner{
+  height: 40px;
+}
+
+/* styles for '...' */
+.block-with-text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 2.5em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+  /* place for '...' */
+  margin-right: 0;
+  padding-right: 1em;
+}
+/* create the ... */
+.block-with-text:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 1px;
+  z-index: 1;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  z-index: 1;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+@media screen and (max-width: 1545px){
+  .main__container{
+    max-width: 300px;
+  }
+  .card__img {
+    min-width: 290px;
+  }
+}
+@media screen and (max-width: 1442px) {
+  .labels{
+    max-width: 95%;
+  }
+}
+@media screen and (max-width: 1275px){
+  .main__body{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ html {
+   font-size: 18px;
+ }
+}
+@media screen and (max-width: 968px){
+  .card__img {
+    min-width: 240px;
+  }
+  .main__container{
+    max-width: 260px;
+  }
+}
+@media screen and (max-width: 836px){
+  .main__body{
+    grid-template-columns: 1fr 1fr;
+  }
+  .card__img {
+    min-width: 280px;
+  }
+  .main__container{
+    max-width: 320px;
+  }
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 683px){
+  .card__img {
+    min-width: 240px;
+  }
+  .main__container{
+    max-width: 280px;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px){
+  .main__body{
+    grid-template-columns: 1fr;
+  }
+  .card__img {
+    min-width: 350px;
+  }
+  .main__container{
+    max-width: 400px;
+  }
+  .label {
+    flex-direction: column;
+    max-width: 225px;
+  }
+  .label__text {
+    margin-bottom: 1rem;
+  }
+  .label__text--unique {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 423px){
+  .label__text--unique {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 416px){
+  .card__img {
+    min-width: 320px;
+  }
+  .main__container{
+    max-width: 358px;
+  }
+}
+@media screen and (max-width: 380px){
+  .card__img {
+    min-width: 280px;
+  }
+  .main__container{
+    max-width: 300px;
+  }
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 336px) {
+  .label__text--unique {
+    margin-bottom: 2rem;
+  }
+}
+html {
+  width: 100%;
+  width: 100vw;
+}

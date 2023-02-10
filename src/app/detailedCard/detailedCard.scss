@@ -1,0 +1,58 @@
+
+.detailed-card{
+  font-family:"Roboto" ,serif;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background-color: #fff;
+  font-size: 1rem;
+}
+.detailed-card__container{
+  margin: 2rem 0px 0px 0px ;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 100%;
+}
+ 
+.datailed-card__desc{
+  padding: 30px 30px 30px 30px ;
+  background-color: white;
+  overflow: auto;
+}
+.book-image{
+  display: grid;
+  place-items: center;
+  place-content: center;
+  background: rgba(150, 139, 139, 0.452);
+  background: radial-gradient(orange, transparent);
+}
+.adapt-img{
+  padding: 50px 0;
+  height: 100%;
+}
+.detailed-card__categories{
+  color:coral;
+  font-family:"SonsieOneRegular" ,serif;
+}
+.detailed-card__title{
+  font-weight: 600;
+}
+.detailed-card__authors{
+  color:cornflowerblue;
+}
+.detailed-card__area{
+  padding: 25px 0px;
+}
+.authors{
+
+}
+@media screen and (max-width:683px){
+  .detailed-card {
+    grid-template-columns: 1fr;
+  }
+  .detailed-card__area {
+    padding: 0;
+  }
+}
